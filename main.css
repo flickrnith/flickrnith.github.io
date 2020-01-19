@@ -26,6 +26,9 @@ body{
 .hb_lists{
     margin: 0%;
 }
+.hbl-extra{
+    display: inline;
+}
 .hb_list{
     display: inline;
 }
@@ -71,9 +74,13 @@ body{
 .c1ll-links{
     text-decoration: none;
 }
-.c1lll-main-name{color: white;font-family: sans-serif;font-weight: 600;font-size: large;}
-.c1lll-name{
-    
+.c1lll-main-name{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+.c1lll-name{    
 }
                                    /* for c1-right*/
 .c1_right{
@@ -162,13 +169,18 @@ form{
     padding: 2%;
     margin: 0% 2%;
     border: solid #f67d4f 1px;
+    font-size: large;
+    font-family: sans-serif;
 }
 .textarea{
     width: 90%;
     height: 70px;
     border: solid #f67d4f 2px;
     border-radius: 5px;
-    margin: 0% 2%;
+    margin: 0% 1%;
+    padding: 2%;
+    font-size: large;
+    font-family: sans-serif;
 }
 #submit{
     display: block;
@@ -193,17 +205,47 @@ form{
 .footer_para{
     color: white;
 }
+                                        /*media queries*/
 @media screen and (max-width: 700px){
     .container1{
         display: block;
-        padding: 16% 5% 0% 5%;
-        margin: 0%
+        padding: 20% 5% 0% 5%;
+        margin: 0%;
     }
-    .c1_left{
-        background-color: #0c0b0b;
-        padding: 5%
+    .c1-left{}
+    .c1l-lists{
+    padding-inline-start: 0px;
+    padding: 1% 10%;
+    }
+    .c1l-list{}
+    .c1ll-lists{
+    padding-inline-start: 0px;
+    }
+    .c1ll-main-list{}
+    .c1ll-list{}
+    .main_header{}
+    .header_top{}
+    .ht_heading{}
+    .header_bottom{
+    margin: 0% 3%;
+    }
+    .hb_lists{
+    margin: 0%;
+    padding-inline-start: 0px;
+    }
+    .hbl-extra{}
+    .hb_list{}
+    .hb_list_name{
+    padding: 2% 5%;
+    margin: 0% 0%;
+    }
+    .container3{
     }
     .c3_body{
-        display: block;
+    display: block;
     }
+    .c3_left{}
+    .c3_right{}
+    .formdata{}
 }
+
