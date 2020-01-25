@@ -1,14 +1,15 @@
 // for header
+
 // for changing color
-var hb_btn = document.querySelectorAll('.hb_list_name');
-for(let i = 0;i<hb_btn.length;i++){
-    hb_btn[i].addEventListener('mouseover',function(){
-        hb_btn[i].style.background = 'red';    
-    });
-    hb_btn[i].addEventListener('mouseout',function(){
-        hb_btn[i].style.background = 'darkred';
-    });
-}
+ var hb_btn = document.querySelectorAll('.hb_list_name');
+// for(let i = 0;i<hb_btn.length;i++){
+//     hb_btn[i].addEventListener('mouseover',function(){
+//         hb_btn[i].style.background = 'red';    
+//     });
+//     hb_btn[i].addEventListener('mouseout',function(){
+//         hb_btn[i].style.background = 'darkred';
+//     });
+// }
 
 // for changing content of c1-right content
 let c1rh_article = document.querySelector('.c1rh-article');
@@ -51,14 +52,14 @@ let c1ll_mainlist = document.querySelectorAll('.c1ll-main-list');
 let c1ll_list = document.querySelectorAll('.c1ll-list');
 
 // for changing color c1-left buttons
-for(let i = 0;i<c1ll_mainlist.length;i++){
-    c1ll_mainlist[i].addEventListener('mouseover',function(){
-        c1ll_mainlist[i].style.background = 'darkred';
-    });
-    c1ll_mainlist[i].addEventListener('mouseout',function(){
-        c1ll_mainlist[i].style.background = 'red';
-    });
-}
+// for(let i = 0;i<c1ll_mainlist.length;i++){
+//     c1ll_mainlist[i].addEventListener('mouseover',function(){
+//         c1ll_mainlist[i].style.background = 'darkred';
+//     });
+//     c1ll_mainlist[i].addEventListener('mouseout',function(){
+//         c1ll_mainlist[i].style.background = 'red';
+//     });
+// }
 
 // for displaying content of c1-left buttons
 c1ll_mainlist[0].addEventListener('click',display_deparment);
@@ -75,22 +76,22 @@ c1ll_mainlist[5].addEventListener('click',display_books);
 c1ll_mainlist[5].addEventListener('dblclick',remove_books);
 
 function display_deparment(){
-    for(let i = 0;i<4;i++){
+    for(let i = 0;i<6;i++){
         c1ll_list[i].style.display = 'block';
     }
 }
 function remove_deparment(){
-    for(let i = 0;i<4;i++){
+    for(let i = 0;i<6;i++){
         c1ll_list[i].style.display = 'none';
     }
 }
 function display_clubs(){
-    for(let i = 4;i<5;i++){
+    for(let i = 6;i<7;i++){
         c1ll_list[i].style.display = 'block';
     }
 }
 function remove_clubs(){
-    for(let i = 4;i<5;i++){
+    for(let i = 6;i<7;i++){
         c1ll_list[i].style.display = 'none';
     }
 }
